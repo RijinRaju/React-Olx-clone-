@@ -12,7 +12,7 @@ export default function Context({children}){
      return(
 
         <AuthContext.Provider value={{user,setUser}}>
-{children}
+            {children}
         </AuthContext.Provider>
      );
 

@@ -17,6 +17,7 @@ export default function Signup() {
   const {firebase} =useContext(FirebaseContext)
 
  const handleSubmit=(e)=>{
+   console.log(username)
    e.preventDefault()
    firebase.auth().createUserWithEmailAndPassword(email,password).then((result)=>{
     result.user.updateProfile({displayName:username}).then(
